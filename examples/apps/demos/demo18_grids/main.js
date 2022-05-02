@@ -32,7 +32,7 @@ function example1() {
 
 function example2() {
     const classes = ['dark', 'success', 'info', 'primary', 'danger', 'secondary'];
-    const buttons = [];
+    const buttons = createButtons();
 
     const Rows = 3;
     const Cols = 2;
@@ -74,8 +74,8 @@ function example3() {
 
 function init(link, ui) {
     // example1();
-    // example2();
-    example3();
+    example2();
+    //example3();
 }
 
 
