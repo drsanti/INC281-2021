@@ -9,7 +9,7 @@ function createButtons() {
     return buttons;
 }
 
-function cereateGrids(r, c) {
+function createGrids(r, c) {
     const grids = new Grids({
         rows: r,
         cols: c
@@ -19,7 +19,7 @@ function cereateGrids(r, c) {
 
 function example1() {
     const buttons = createButtons();
-    const grids   = cereateGrids(3, 2);
+    const grids   = createGrids(3, 2);
 
     grids.addChildTo(0,0,buttons[0]);
     grids.addChildTo(0,1,buttons[1]);
@@ -31,12 +31,12 @@ function example1() {
 
 
 function example2() {
-     const classes = ['dark', 'success', 'info', 'primary', 'danger', 'secondary'];
+    const classes = ['dark', 'success', 'info', 'primary', 'danger', 'secondary'];
     const buttons = [];
 
     const Rows = 3;
     const Cols = 2;
-    const grids   = cereateGrids(Rows, Cols);
+    const grids   = createGrids(Rows, Cols);
     let bi=0;
     for(let r=0; r<Rows; r++) {
         for(let j=0; j<Cols; j++) {
@@ -50,7 +50,7 @@ function example3() {
 
     const Rows = 13;
     const Cols = 8;
-    const grids   = cereateGrids(Rows, Cols);
+    const grids   = createGrids(Rows, Cols);
 
     const NB = Rows*Cols;
 
